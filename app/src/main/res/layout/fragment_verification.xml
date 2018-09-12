@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.Fragment.VerificationFragment"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#333"
+        android:gravity="center_horizontal"
+        android:text="@string/verification_message_mobile"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_weight="0.80"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/confirm_label"
+        android:textColor="@color/gray_text_profile"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:id="@+id/confirm_label"/>
+
+    <EditText
+        style="@style/signin_edittext_style"
+        android:layout_marginTop="5dp"
+        android:hint="@string/confirm_label"
+        android:id="@+id/confirm_code"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:textSize="16sp"
+            android:text="@string/skip_verification"
+            android:id="@+id/skip"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/skip"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:textSize="16sp"
+            android:text="@string/back_modify"
+            android:id="@+id/back_modify"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/back_modify"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:textSize="16sp"
+            android:text="@string/confirm"
+            android:textStyle="bold"
+            android:id="@+id/confirm"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

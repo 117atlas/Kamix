@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.40"
+        android:background="@drawable/gray_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cancel_red" />
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="NOT successfull"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.60"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvGotoMainPage"
+            style="@style/orange_submit_button"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:text="Go to main page"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvHistory"
+            style="@style/orange_submit_button"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/black"
+            android:text="View transactoion history"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <!-- <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:gravity="center"
+             android:text="@string/activationaccount_bottom_text"
+             android:textColor="#99000000"
+             android:textSize="16dp" />-->
+
+    </LinearLayout>
+</LinearLayout>

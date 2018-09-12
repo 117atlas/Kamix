@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:id="@+id/root">
+
+    <!-- <include
+         layout="@layout/signin_toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvText"
+                android:layout_width="185dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.80"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Sign in confirmation"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="185dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#99000000"
+                android:textSize="16sp"
+                android:text="@string/confirm_mobile_email_purpose"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvResendSuccess"
+                    style="@style/form_error_text_style"
+                    android:layout_marginTop="10dp"
+                    android:text="PIN and password have been resent, please confirm sign in"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageView
+                        android:id="@+id/spCountry"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/tvCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="+33"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/etMob"
+                        style="@style/signin_edittext_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:hint="Mobile Number"
+                        android:inputType="number"
+                        android:textColor="@color/colorAccent" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_color" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    style="@style/signin_edittext_style"
+                    android:layout_marginTop="10dp"
+                    android:focusable="true"
+                    android:hint="Email" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_color" />
+
+                <EditText
+                    android:id="@+id/etPin"
+                    style="@style/signin_edittext_style"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:hint="PIN code (sent via mobile number)"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textStyle="italic"
+                    android:focusedByDefault="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_color" />
+
+                <EditText
+                    android:id="@+id/etPass"
+                    style="@style/signin_edittext_style"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:hint="Password (sent via email)"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textStyle="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_color" />
+
+                <!--   <EditText
+                       style="@style/signin_edittext_style"
+                       android:layout_marginTop="5dp"
+                       android:hint="Mobile"
+                       android:inputType="number" />
+
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:background="@color/divider_color" />
+
+                   <EditText
+                       android:id="@+id/etPass"
+                       style="@style/signin_edittext_style"
+                       android:layout_marginTop="5dp"
+                       android:hint="Password"
+                       android:inputType="textPassword" />
+
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:background="@color/divider_color" />
+
+                   <EditText
+                       android:id="@+id/etConfPass"
+                       style="@style/signin_edittext_style"
+                       android:layout_marginTop="5dp"
+                       android:hint="Confirm Password"
+                       android:inputType="textPassword" />
+
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:background="@color/divider_color" />-->
+
+                <TextView
+                    android:id="@+id/tvError"
+                    style="@style/form_error_text_style"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@android:color/holo_red_light"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvRegister"
+                    style="@style/orange_submit_button"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Confirm sign in"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tvResend"
+                    style="@style/orange_submit_button"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/black"
+                    android:text="Resend PIN and password"
+                    android:textSize="18dp" />
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="By register, you confirm that you accept our"
+                    android:textColor="#99000000"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTermsOfUse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terms of Use"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=" and "
+                        android:textColor="#99000000"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:id="@+id/tvPrivacyPolicy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="."
+                        android:textColor="#99000000"
+                        android:textSize="17dp" />
+                </LinearLayout>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/register_confirm_bottom_text"
+                    android:textColor="#99000000"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="12dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.Fragment.EnterPINFragment"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.80"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/enter_pin_code"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#99000000"
+        android:textSize="16sp"
+        android:id="@+id/existing_user_message"
+        android:text="@string/existing_user"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/etPin"
+        style="@style/signin_edittext_style"
+        android:layout_marginTop="12dp"
+        android:hint="@string/pin_code_label"
+        android:inputType="numberPassword"
+        android:maxLength="4"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="8dp">
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:text="@string/login_label"
+            android:id="@+id/login"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:layout_weight=".5"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:text="@string/pin_forgotten"
+            android:id="@+id/forgotten"
+            android:textSize="12sp"
+            android:layout_weight=".5"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

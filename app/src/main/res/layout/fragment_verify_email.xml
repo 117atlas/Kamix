@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.Fragment.VerifyEmailFragment">
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.80"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/confirm_email_address"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#99000000"
+        android:textSize="16sp"
+        android:id="@+id/confirm_email_address_message"
+        android:text="@string/confirm_email_address_message"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/etPass"
+        style="@style/signin_edittext_style"
+        android:layout_marginTop="12dp"
+        android:hint="@string/confirm_pass_label"
+        android:inputType="textPassword"
+        android:maxLength="5"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="8dp">
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:text="@string/confirm"
+            android:id="@+id/yes"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:layout_weight=".5"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:text="@string/confirm_later"
+            android:id="@+id/no"
+            android:layout_toLeftOf="@id/yes"
+            android:layout_weight=".5"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

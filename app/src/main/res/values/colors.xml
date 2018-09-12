@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#385723</color>
+    <color name="colorPrimaryDark">#a9d18e</color>
+    <color name="colorAccent">#385723</color>
+
+    <color name="divider_color">#c3c3c3</color>
+    <color name="main_login_background">#f7f7f7</color>
+    <color name="transaction_income_color">#3B5998</color>
+
+    <color name="execute_button_color">#385723</color><!-- 7f7f7f-->
+
+    <color name="gray_text_profile">#c7c7c7</color>
+</resources>
