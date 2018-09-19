@@ -1,5 +1,18 @@
 <resources>
     <string name="app_name">Kamix</string>
+    
+    <string name="intro_next">NEXT</string>
+    <string name="intro_skip">SKIP</string>
+    <string name="intro_got_it">GOT IT</string>
+    <string name="slide1_title">Transfert</string>
+    <string name="slide1_desc">Transfer Money for free to family and friends.</string>
+    <string name="slide2_title">Payment</string>
+    <string name="slide2_desc">Settle payments in 1000+ physical shops.</string>
+    <string name="slide3_title">Funding</string>
+    <string name="slide3_desc">Fund your account using mobile money.</string>
+    <string name="slide4_title">Withdrawal</string>
+    <string name="slide4_desc">Withdraw your funds to your mobile money.</string>
+
     <string name="activationaccount_text">Congratulations !\nYour Account is now</string>
     <string name="intro_title">Join a community of thousands of economic\nagents today !</string>
     <string name="tagline">\"Don\'t Be Dreamers,\nBe Researchers\"</string>

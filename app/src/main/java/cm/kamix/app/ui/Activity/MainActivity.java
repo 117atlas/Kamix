@@ -46,11 +46,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         tvRegister = (TextView) findViewById(R.id.tvRegister);
 
-        ViewPager pager = (ViewPager) findViewById(R.id.photos_viewpager); //cast viewpager
-        pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
+        //ViewPager pager = (ViewPager) findViewById(R.id.photos_viewpager); //cast viewpager
+        //pager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
 
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout); // cast tabindicator
-        tabLayout.setupWithViewPager(pager, true);
+        //TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout); // cast tabindicator
+        //tabLayout.setupWithViewPager(pager, true);
 
         tvRegister.setOnClickListener(new View.OnClickListener() {
             @Override
